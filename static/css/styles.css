@@ -62,6 +62,16 @@
     font-style: normal;
 }
 
+a{
+  font-family: 'plus-Jakarta-Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
 
 body {
   margin: 0;
@@ -69,11 +79,26 @@ body {
   background-color: var(--primary);
 }
 
+footer{
+  background-color: var(--secondary);
+  padding: 1rem 0.94rem;
+}
+
+
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 1rem 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'plus-Jakarta-Sans', sans-serif;
+}
+
+h1{
+  font-size: 2rem;
 }
 
 html{
@@ -83,6 +108,7 @@ html{
 
 p{
   letter-spacing: 1.6px;
+  font-family: 'plus-Jakarta-Sans', sans-serif;
 }
 
 section {
@@ -101,11 +127,31 @@ section {
   color: white;
   text-decoration: none;
   letter-spacing: 1.6px;
+  margin: 0 0.3rem;
 }
 
 .buttons{
   margin: 5rem auto;
-  max-width: 16rem;
+  max-width: 18rem;
+}
+
+.details a{
+  text-align: center;
+  display: block;
+}
+
+.footer-div{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
 .hamburger{
@@ -116,7 +162,7 @@ section {
 
 .hero{
   position: relative;
-  top: -4.9rem;
+  top: -5.9rem;
   height: 34rem;
   opacity: 0.5;
 
@@ -128,9 +174,13 @@ section {
 }
 
 .logo img{
-  height: 3.5rem;
+  height: 4.5rem;
   position: relative;
   z-index: 10;
+}
+footer .logo img{
+  margin: auto;
+  display: inherit;
 }
 
 .hero-text{
@@ -152,7 +202,7 @@ section {
 
 .introduction{
   padding: 0 0.94rem;
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 .introduction h2, .introduction p{
   text-align: center;
@@ -201,6 +251,13 @@ section {
   left: 0;
   top: 0;
   transition: 0.3s;
+  z-index: 10;
+}
+
+.neighbor-img{
+  width: 80%;
+  margin: 1rem auto;
+  display: block;
 }
 
 .vision{
@@ -217,7 +274,10 @@ section {
   font-weight: bold;
   position: absolute;
   top: 34%;
-  left: -0.5rem;
+  left: 0;
+  right: 0;
+  width: 360px;
+  margin: auto;
 }
 
 .white-text h2, .white-text p{
@@ -225,6 +285,57 @@ section {
   text-align: center;
 }
 
+
+@media only screen and (min-width: 768px){
+
+a, p {
+  font-size: 1.125rem;
+}
+
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .aqua-text{
+    font-size: 1.25;
+  }
+
+  .buttons{
+    max-width: 19rem;
+  }
+
+.hero{
+  height: 55rem;
+  top: -7.9rem;
+}
+
+.hero-text h1{
+  max-width: 25rem;
+}
+
+.logo img{
+  height: 6.5rem;
+}
+
+.points{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  margin: 1rem;
+}
+
+.vision::after{
+  font-size: 450px;
+  top: 10%;
+  width: 540px;
+}
+
+
+}
 
 @media only screen and (min-width: 1024px){
 
