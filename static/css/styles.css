@@ -1,7 +1,7 @@
 :root {
   --primary: #c2b2b4;
   --secondary: #2a4849;
-  --tertiary: rgba(34, 46, 80, 50);
+  --tertiary: #5c5e74;
   --quaternary: #4adbc8;
   --quinary: #394241;
 }
@@ -65,8 +65,8 @@
 
 body {
   margin: 0;
-  overflow-x: none;
-  background-color: var(--secondary);
+  overflow-x: hidden;
+  background-color: var(--primary);
 }
 
 header {
@@ -77,12 +77,35 @@ header {
 }
 
 html{
-  overflow-x: none;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+p{
+  letter-spacing: 1.6px;
 }
 
 section {
   position: relative;
+}
+
+.aqua-text{
+  color: var(--quaternary);
+  font-size: 1.125rem;
+}
+
+.btn-main{
+  background-color: var(--quaternary);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1.6px;
+}
+
+.buttons{
+  margin: 5rem auto;
+  max-width: 16rem;
 }
 
 .hamburger{
@@ -94,7 +117,9 @@ section {
 .hero{
   position: relative;
   top: -4.9rem;
-  height: 98vh;
+  height: 34rem;
+  opacity: 0.5;
+
 }
 
 .hero img{
@@ -106,6 +131,35 @@ section {
   height: 3.5rem;
   position: relative;
   z-index: 10;
+}
+
+.hero-text{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5rem;
+  margin: auto;
+}
+
+.hero-text h1{
+  color: white;
+  text-align: center;
+  max-width: 15rem;
+  margin: auto;
+
+}
+
+
+.introduction{
+  padding: 0 0.94rem;
+  margin-top: -4rem;
+}
+.introduction h2, .introduction p{
+  text-align: center;
+
+}
+.introduction p{
+  opacity: 0.7;
 }
 
 .menu{
@@ -147,6 +201,28 @@ section {
   left: 0;
   top: 0;
   transition: 0.3s;
+}
+
+.vision{
+  background-color: var(--tertiary);
+  padding: 1rem 0.94rem;
+  position: relative;
+}
+
+.vision::after{
+  content: "E4";
+  font-size: 300px;
+  opacity: 0.15;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 34%;
+  left: -0.5rem;
+}
+
+.white-text h2, .white-text p{
+  color: white;
+  text-align: center;
 }
 
 
