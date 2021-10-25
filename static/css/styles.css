@@ -66,6 +66,7 @@ a{
   font-family: 'plus-Jakarta-Sans', sans-serif;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
 a:hover{
@@ -135,6 +136,11 @@ section {
   max-width: 18rem;
 }
 
+.button{
+  margin: 3rem auto;
+  max-width: 11rem;
+}
+
 .details a{
   text-align: center;
   display: block;
@@ -163,7 +169,7 @@ section {
 .hero{
   position: relative;
   top: -5.9rem;
-  height: 34rem;
+  height: 95vh;
   opacity: 0.5;
 
 }
@@ -195,8 +201,15 @@ footer .logo img{
   color: white;
   text-align: center;
   max-width: 15rem;
-  margin: auto;
+  margin: 2rem auto 0;
 
+}
+
+.hero-text p{
+  color: white;
+  text-align: center;
+  max-width: 15rem;
+  margin: 2rem auto 0;
 }
 
 
@@ -260,6 +273,21 @@ footer .logo img{
   display: block;
 }
 
+.situation{
+  background-color: var(--secondary);
+  padding: 3rem 0.94rem;
+  top: -5.9rem;
+}
+.situation h2{
+  color: white;
+  text-align: center;
+}
+
+.sit-text p{
+  color: white;
+  opacity: 0.6;
+}
+
 .vision{
   background-color: var(--tertiary);
   padding: 1rem 0.94rem;
@@ -278,6 +306,7 @@ footer .logo img{
   right: 0;
   width: 360px;
   margin: auto;
+  font-family: 'plus-Jakarta-Sans', sans-serif;
 }
 
 .white-text h2, .white-text p{
@@ -309,12 +338,22 @@ a, p {
   }
 
 .hero{
-  height: 55rem;
+
   top: -7.9rem;
+}
+
+.hero img{
+  position: absolute;
+  right: 0;
 }
 
 .hero-text h1{
   max-width: 25rem;
+}
+
+.hero-text{
+  right: 50%;
+  left: 5rem;
 }
 
 .logo img{
@@ -339,18 +378,41 @@ a, p {
 
 @media only screen and (min-width: 1024px){
 
+  .details{
+    margin-top: 2rem;
+  }
+
+  .footer-div, .footer-menu{
+    flex-direction: row;
+  }
+  .footer-menu a{
+    margin: 2rem 1rem;
+  }
+
   .hamburger{
     display: none;
+  }
+
+  .hero{
+
   }
 
   .menu{
     display: flex;
     flex-direction: row;
+    z-index: 15;
+    right: 5%;
+    position: relative;
   }
 
   .menu ul{
     display: flex;
       flex-direction: row;
+  }
+
+  .menu li{
+    margin: 1rem 3rem;
+    font-size: 1.875rem;
   }
 
   .menu a{
@@ -360,5 +422,88 @@ a, p {
     font-family: 'plus-Jakarta-Sans', sans-serif;
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  .vision p{
+    max-width: 37rem;
+    margin: 2rem auto;
+  }
+
+  .vision::after{
+    font-size: 650px;
+    width: 845px;
+    opacity: 0.10;
+  }
+
+  .who-we-are{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1280px){
+
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+
+  a, p{
+    font-size: 1.25rem;
+  }
+
+  .buttons{
+    max-width: 20rem;
+  }
+
+  .hero img{
+    object-fit: cover;
+    width: 70vw;
+  }
+
+  .hero{
+    top: -10.9rem;
+  }
+
+  .logo img{
+    height: 9.5rem;
+  }
+
+  .who-we-are{
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 4rem;
+  }
+  p, a{
+    font-size: 1.5rem;
+
+  }
+
+  .aqua-text{
+    font-size: 1.75rem;
+  }
+
+  .hero-text h1{
+    max-width: 34rem
+  }
+
+  .buttons{
+    max-width: 22rem;
+  }
+
+  .hero-text{
+    top: 15rem;
   }
 }
