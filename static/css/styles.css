@@ -144,6 +144,7 @@ section {
 .details a{
   text-align: center;
   display: block;
+  opacity: 0.6;
 }
 
 .footer-div{
@@ -159,6 +160,9 @@ section {
   justify-content: center;
   margin: 1rem auto;
 }
+.footer-menu a{
+  opacity: 0.6;
+}
 
 .hamburger{
   margin-top: 1rem;
@@ -168,7 +172,7 @@ section {
 
 .hero{
   position: relative;
-  top: -5.9rem;
+  top: -6.9rem;
   height: 95vh;
   opacity: 0.5;
 
@@ -180,13 +184,30 @@ section {
 }
 
 .logo img{
-  height: 4.5rem;
+  height: 5.5rem;
   position: relative;
   z-index: 10;
 }
 footer .logo img{
   margin: auto;
   display: inherit;
+}
+
+.help{
+  padding: 2rem 0.94rem;
+}
+.help h2{
+  text-align: center;
+  color: white;
+}
+.help h3{
+  text-align: center;
+  color: var(--secondary);
+}
+.help p{
+  opacity: 0.8;
+  max-width: 30rem;
+  margin: 1.5rem auto;
 }
 
 .hero-text{
@@ -273,10 +294,68 @@ footer .logo img{
   display: block;
 }
 
+.one::before{
+  content: "1";
+  font-weight: bold;
+  font-size: 4rem;
+    font-family: 'plus-Jakarta-Sans', sans-serif;
+    position: absolute;
+    left: -3rem;
+    opacity: 0.2;
+    color: white;
+    top: 20%;
+}
+
+.two::before{
+  content: "2";
+  font-weight: bold;
+  font-size: 4rem;
+    font-family: 'plus-Jakarta-Sans', sans-serif;
+    position: absolute;
+    left: -3rem;
+    opacity: 0.2;
+    color: white;
+    top: 20%;
+}
+
+.three::before{
+  content: "3";
+  font-weight: bold;
+  font-size: 4rem;
+    font-family: 'plus-Jakarta-Sans', sans-serif;
+    position: absolute;
+    left: -3rem;
+    opacity: 0.2;
+    color: white;
+    top: 20%;
+}
+
+.opportunities{
+  background-color: var(--tertiary);
+  padding: 2rem 1.94rem;
+}
+
+.opportunities img{
+  max-width: 60%;
+  margin: auto;
+  display: block;
+}
+.opportunities h2{
+  text-align: center;
+  color: white;
+}
+.opportunities p{
+  color: white;
+  opacity: 0.6;
+  max-width: 30rem;
+  margin: 1.5rem auto;
+}
+
 .situation{
   background-color: var(--secondary);
   padding: 3rem 0.94rem;
-  top: -5.9rem;
+  top: -8.9rem;
+  margin-bottom: -8.9rem;
 }
 .situation h2{
   color: white;
@@ -286,6 +365,10 @@ footer .logo img{
 .sit-text p{
   color: white;
   opacity: 0.6;
+  margin-left: 3rem;
+  position: relative;
+  max-width: 30rem;
+  margin: 1.5rem auto;
 }
 
 .vision{
@@ -339,7 +422,7 @@ a, p {
 
 .hero{
 
-  top: -7.9rem;
+  top: -8.9rem;
 }
 
 .hero img{
@@ -351,13 +434,10 @@ a, p {
   max-width: 25rem;
 }
 
-.hero-text{
-  right: 50%;
-  left: 5rem;
-}
+
 
 .logo img{
-  height: 6.5rem;
+  height: 7.5rem;
 }
 
 .points{
@@ -394,7 +474,16 @@ a, p {
   }
 
   .hero{
+    top: -9.9rem
+  }
+  .hero-text{
+    right: 50%;
+    left: 5rem;
+    top: 0;
+  }
 
+  .logo img{
+    height: 8.5rem;
   }
 
   .menu{
@@ -418,11 +507,13 @@ a, p {
   .menu a{
     text-decoration: none;
     color: white;
-    margin: 0 1.5rem;
+    margin: 0 0.5rem;
     font-family: 'plus-Jakarta-Sans', sans-serif;
     font-size: 1rem;
     font-weight: bold;
   }
+
+
 
   .vision p{
     max-width: 37rem;
@@ -430,8 +521,8 @@ a, p {
   }
 
   .vision::after{
-    font-size: 650px;
-    width: 845px;
+    font-size: 550px;
+    width: 690px;
     opacity: 0.10;
   }
 
@@ -465,11 +556,22 @@ a, p {
   }
 
   .hero{
-    top: -10.9rem;
+    top: -12.9rem;
   }
 
   .logo img{
-    height: 9.5rem;
+    height: 10.5rem;
+  }
+
+  .opportunities img{
+    max-width: 20%;
+  }
+
+  .sit-text, .op-text, .help-items{
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3.5rem;
   }
 
   .who-we-are{
