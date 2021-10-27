@@ -85,7 +85,49 @@ footer{
   padding: 1rem 0.94rem;
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
 
+input, textarea{
+  font-family: 'plus-Jakarta-Sans', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  padding: 0 20px 10px 0;
+}
+
+input[type=email], input[type=text], input[type=phone], textarea{
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+input[type=email], input[type=button] {
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+}
+input[type=submit]{
+  border-radius: 4px;
+  padding: 1.128rem 2rem;
+  max-width: 8rem;
+  letter-spacing: 2.24px;
+}
+
+
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+}
+
+label{
+  color: white;
+}
 
 header {
   display: flex;
@@ -164,6 +206,16 @@ section {
   opacity: 0.6;
 }
 
+.form{
+  background-color: var(--quaternary);
+  padding: 2rem 0.94rem;
+}
+.form h2{
+  color: white;
+  text-align: center;
+  margin: 2rem auto;
+}
+
 .hamburger{
   margin-top: 1rem;
   position: relative;
@@ -233,6 +285,26 @@ footer .logo img{
   margin: 2rem auto 0;
 }
 
+.info{
+  background-color: var(--secondary);
+  padding: 2rem 0.94rem;
+  margin-top: -6.9rem;
+}
+
+.info p, .info h2{
+  color: white;
+}
+.info p, .info h2, .info a{
+  text-align: center;
+  display: block;
+}
+.info>div div{
+  margin: 4rem 0;
+}
+.info p, .info a{
+  opacity: 0.8;
+}
+
 
 .introduction{
   padding: 0 0.94rem;
@@ -286,6 +358,10 @@ footer .logo img{
   top: 0;
   transition: 0.3s;
   z-index: 10;
+}
+
+.name{
+  font-weight: bold;
 }
 
 .neighbor-img{
@@ -373,7 +449,7 @@ footer .logo img{
 
 .vision{
   background-color: var(--tertiary);
-  padding: 1rem 0.94rem;
+  padding: 1rem 0.94rem 3rem;
   position: relative;
 }
 
@@ -384,7 +460,7 @@ footer .logo img{
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 34%;
+  top: 30%;
   left: 0;
   right: 0;
   width: 360px;
@@ -434,7 +510,9 @@ a, p {
   max-width: 25rem;
 }
 
-
+.info{
+  margin-top: -8.9rem;
+}
 
 .logo img{
   height: 7.5rem;
@@ -449,7 +527,7 @@ a, p {
 
 .vision::after{
   font-size: 450px;
-  top: 10%;
+  top: 5%;
   width: 540px;
 }
 
@@ -559,6 +637,11 @@ a, p {
     top: -12.9rem;
   }
 
+  .info>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .logo img{
     height: 10.5rem;
   }
@@ -601,11 +684,15 @@ a, p {
     max-width: 34rem
   }
 
+  .button{
+    max-width: 12rem;
+  }
+
   .buttons{
     max-width: 22rem;
   }
 
   .hero-text{
-    top: 15rem;
+    top: 5rem;
   }
 }
