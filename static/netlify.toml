@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/volunteer/*"
+  status = 200
+  force = true
+  conditions = {Role = ["pro"]}
+
+[[redirects]]
+  from = "/volunteer/*"
+  to = "/login/"
+  status = 302
+  force = true
