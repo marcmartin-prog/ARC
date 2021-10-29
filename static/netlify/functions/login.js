@@ -1,3 +1,4 @@
+
 const querystring = require('querystring');
 const axios = require('axios');
 
@@ -7,7 +8,7 @@ exports.handler = async function (event, context) {
   const endpoint = `${process.env.URL}/.netlify/identity/token`;
   const data = querystring.stringify({
     grant_type: 'password',
-    username: 'email@example.com',
+    username: 'marcus@scriptworks.net',
     password: password,
   });
   const options = {
