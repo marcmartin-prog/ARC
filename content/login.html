@@ -4,8 +4,13 @@ date: 2021-10-28T07:06:42-05:00
 draft: false
 ---
 
-<form action="/.netlify/functions/login" method="POST">
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" />
-  <button type="submit">Get access</button>
-</form>
+<section class="login">
+  <h1>Please Enter Your Password to Access This Content</h1>
+  <p>You can get authorized to view this content by contacting us.</p>
+  <form action="/.netlify/functions/login" method="POST">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <br>
+    <button type="button" name="button" class="btn-main">Get Access</button>
+  </form>
+</section>

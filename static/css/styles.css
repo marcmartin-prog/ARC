@@ -320,6 +320,18 @@ footer .logo img{
   opacity: 0.7;
 }
 
+.login{
+  background-color: var(--secondary);
+  padding: 3rem 0.94rem;
+}
+.login h1, .login p{
+  color: white;
+  text-align: center;
+}
+.login p{
+  opacity: 0.6;
+}
+
 .menu{
   display: none;
 }
