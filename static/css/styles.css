@@ -221,7 +221,7 @@ section {
 .downloads a{
   background-color: var(--secondary);
   text-align: center;
-  width: 10rem;
+  width: 13rem;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
   color: white;
@@ -276,7 +276,7 @@ section {
   top: -6.9rem;
   height: 95vh;
   opacity: 0.5;
-
+  margin-bottom: -6.9rem;
 }
 
 .hero img{
@@ -338,7 +338,6 @@ footer .logo img{
 .info{
   background-color: var(--secondary);
   padding: 2rem 0.94rem;
-  margin-top: -6.9rem;
 }
 
 .info p, .info h2{
@@ -489,11 +488,13 @@ footer .logo img{
   margin: 1.5rem auto;
 }
 
+.password{
+  max-width: 20rem;
+}
+
 .situation{
   background-color: var(--secondary);
   padding: 3rem 0.94rem;
-  top: -8.9rem;
-  margin-bottom: -8.9rem;
 }
 .situation h2{
   color: white;
@@ -530,7 +531,7 @@ footer .logo img{
   font-family: 'plus-Jakarta-Sans', sans-serif;
 }
 
-.white-text h2, .white-text p{
+.white-text h2, .white-text p, .white-text h3{
   color: white;
   text-align: center;
 }
@@ -559,12 +560,13 @@ a, p {
   }
 
   .downloads a{
-    width: 12rem;
+    width: 15rem;
   }
 
 .hero{
 
   top: -8.9rem;
+  margin-bottom: -8.9rem;
 }
 
 .hero img{
@@ -611,7 +613,7 @@ a, p {
   }
 
   .downloads div{
-    width: 50%;
+    width: 90%;
     display: flex;
     margin: 0 auto 2rem;
   }
@@ -704,6 +706,10 @@ a, p {
     max-width: 22rem;
   }
 
+  .downloads div{
+    width: 75%;
+  }
+
   .hero img{
     object-fit: cover;
     width: 70vw;
@@ -720,6 +726,10 @@ a, p {
 
   .logo img{
     height: 10.5rem;
+  }
+
+  .log-h1{
+    font-size: 2.5rem;
   }
 
   .opportunities img{
@@ -757,11 +767,18 @@ a, p {
   }
 
   .downloads a{
-    width: 15rem;
+    width: 18rem;
+  }
+  .downloads div{
+    width: 60%
   }
 
   .hero-text h1{
     max-width: 34rem
+  }
+
+  .log-h1{
+    font-size: 3rem;
   }
 
   .button{
