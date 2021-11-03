@@ -22,12 +22,12 @@ collections:
       - {label: "Opportunity 1", name: "opportunities1", widget: "string"}
       - {label: "Opportunity 2", name: "opportunities2", widget: "string"}
       - {label: "Opportunity 3", name: "opportunities3", widget: "string"}
-  -name: "Updates"
-   label: "Updates"
-   folder: "content/updates"
-   create: "true"
-   slug: "{{slug}}"
-   fields:
+  - name: "Updates"
+    label: "Updates"
+    folder: "content/updates"
+    create: "true"
+    slug: "{{slug}}"
+    fields:
      - {label: "Title", name: "title", widget: "string"}
      - {label: "Short Description", name: "shortdescription", widget: "string"}
      - {label: "Content", name: "content", widget: "markdown"}
