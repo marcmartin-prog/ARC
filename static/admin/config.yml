@@ -13,5 +13,24 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Short Description", name: "short-description", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Short Description", name: "shortdescription", widget: "string"}
+      - {label: "Featured Image webp", name: "thumbnail-webp", widget: "image"}
+      - {label: "Featured Image jpg", name: "thumbnail-jpg", widget: "image"}
+      - {label: "About the Situation 1", name: "situation1", widget: "string"}
+      - {label: "About the Situation 2", name: "situation2", widget: "string"}
+      - {label: "About the Situation 3", name: "situation3", widget: "string"}
+      - {label: "Opportunity 1", name: "opportunities1", widget: "string"}
+      - {label: "Opportunity 2", name: "opportunities2", widget: "string"}
+      - {label: "Opportunity 3", name: "opportunities3", widget: "string"}
+
+
+
+  -name: "Updates"
+   label: "Updates"
+   folder: "content/updates"
+   create: "true"
+   slug: "{{slug}}"
+   fields:
+     - {label: "Title", name: "title", widget: "string"}
+     - {label: "Short Description", name: "shortdescription", widget: "string"}
+     - {label: "Content", name: "content", widget: "markdown"}

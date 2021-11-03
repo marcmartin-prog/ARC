@@ -1,4 +1,32 @@
 
 {{ define "main" }}
-   {{ .Content}}
+<section>
+<div class="">
+  <div class="hero">
+    <picture class="">
+      <source srcset="/images/refugees.webp" type="image/webp">
+      <source srcset="/images/refugees.jpg" type="image/jpg">
+      <img src="/images/refugees.jpg" alt="open Bible at sunset" class="">
+    </picture>
+  </div>
+  <div class="hero-text">
+      <h1>Opportunities to Help Refugees</h1>
+      <p>It is estimated that there is over 90,000 refugees living in the United States.</p>
+      <div class="buttons">
+        <a href="#more-info" class="btn-main">More Info</a>
+      </div>
+  </div>
+</div>
+</section>
+<section>
+  <div class="">
+    {{ range .Pages }}
+       <div class="">
+         <h2>{{.Title}}</h2>
+         <p>{{ .Params.shortdescription }}</p>
+         <a href="{{.Permalink}}">Learn More</a>
+       </div>
+    {{ end }}
+  </div>
+</section>
 {{ end }}
