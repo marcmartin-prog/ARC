@@ -1,0 +1,34 @@
+
+{{ define "main" }}
+<section>
+<div class="">
+  <div class="hero">
+    <picture class="">
+      <source srcset="/images/refugees.webp" type="image/webp">
+      <source srcset="/images/refugees.jpg" type="image/jpg">
+      <img src="/images/refugees.jpg" alt="helping refugees" class="">
+    </picture>
+  </div>
+  <div class="hero-text">
+      <h1>Opportunities to Help Refugees</h1>
+      <p>It is estimated that there is over 90,000 refugees living in the United States.</p>
+      <div class="button">
+        <a href="#more-info" class="btn-main">More Info</a>
+      </div>
+  </div>
+</div>
+</section>
+<section class="list">
+  <h2>Refugee Opportunities</h2>
+  <p>While we cannot help nearly all the refugees that have come over, below is some of the areas where we are trying to help them. </p>
+  <div class="card-parent">
+    {{ range .Pages }}
+       <div class="card">
+         <h3>{{.Title}}</h3>
+         <p>{{ .Params.shortdescription }}</p>
+         <a href="{{.Permalink}}">Learn More</a>
+       </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

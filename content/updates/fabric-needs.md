@@ -1,4 +1,5 @@
 ---
+layout: update
 title: Fabric Needs
 shortdescription: Fabric needed for the Fort McCoy project
 content: We are looking for fabric to help out with the sewing projects at Fort

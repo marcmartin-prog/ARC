@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section>
+  <div class="">
+    <div class="hero">
+      <picture class="">
+        <source srcset="/images/refugees.webp" type="image/webp">
+        <source srcset="/images/refugees.jpg" type="image/jpg">
+        <img src="/images/refugees.jpg" alt="update" class="">
+      </picture>
+    </div>
+    <div class="hero-text">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.shortdescription }}</p>
+    </div>
+  </div>
+</section>
+<section class="update-content">
+  <div class="">
+    <p>{{ .Params.content }}</p>
+  </div>
+</section>
+
+{{ end }}

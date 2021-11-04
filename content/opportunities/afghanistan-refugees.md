@@ -1,9 +1,10 @@
 ---
+layout: opportunity
 title: Afghanistan Refugees
 shortdescription: Refugees from Afghanistan have been pouring into the USA since
   the Taliban have overrun the country.
-thumbnail-webp: /images/uploads/refugees.webp
-thumbnail-jpg: /images/uploads/refugees.jpg
+thumbnailwebp: /images/uploads/refugees.webp
+thumbnailjpg: /images/uploads/refugees.jpg
 situation1: There has been thousands of refugees recently brought over from
   Afghanistan, due to the recent turmoil there. Many of these people have helped
   the US military in some way, so it is not safe for them to stay in

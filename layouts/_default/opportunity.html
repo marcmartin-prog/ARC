@@ -1,0 +1,39 @@
+
+{{ define "main" }}
+<section>
+  <div class="">
+    <div class="hero">
+      <picture class="">
+        <source srcset="{{ .Params.thumbnailwebp}}" type="image/webp">
+        <source srcset="{{ .Params.thumbnailjpg }}" type="image/jpg">
+        <img src="{{ .Params.thumbnailjpg }}" alt="helping refugees" class="">
+      </picture>
+    </div>
+    <div class="hero-text">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.shortdescription }}</p>
+        <div class="button">
+          <a href="#opportunities" class="btn-main">Opportunities</a>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="situation">
+  <h2>The Situation</h2>
+  <div class="sit-text">
+    <p class="one">{{ .Params.situation1 }}</p>
+    <p class="two">{{ .Params.situation2 }}</p>
+    <p class="three">{{ .Params.situation3 }}</p>
+  </div>
+</section>
+
+<section class="opportunities" id="opportunities">
+  <h2>The Opportunities in Fort McCoy</h2>
+  <img src="/images/eating.svg" alt="helping others">
+  <div class="op-text">
+    <p>{{ .Params.opportunities1 }}</p>
+    <p>{{ .Params.opportunities2 }}</p>
+    <p>{{ .Params.opportunities3 }}</p>
+  </div>
+</section>
+{{ end }}

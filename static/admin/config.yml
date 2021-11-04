@@ -7,15 +7,17 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   - name: "Opportunities" # Used in routes, e.g., /admin/collections/blog
+
     label: "Opportunities" # Used in the UI
     folder: "content/opportunities" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: opportunity}
       - {label: "Short Description", name: "shortdescription", widget: "string"}
-      - {label: "Featured Image webp", name: "thumbnail-webp", widget: "image"}
-      - {label: "Featured Image jpg", name: "thumbnail-jpg", widget: "image"}
+      - {label: "Featured Image webp", name: "thumbnailwebp", widget: "image"}
+      - {label: "Featured Image jpg", name: "thumbnailjpg", widget: "image"}
       - {label: "About the Situation 1", name: "situation1", widget: "string"}
       - {label: "About the Situation 2", name: "situation2", widget: "string"}
       - {label: "About the Situation 3", name: "situation3", widget: "string"}
@@ -29,5 +31,6 @@ collections:
     slug: "{{slug}}"
     fields:
      - {label: "Title", name: "title", widget: "string"}
+     - {label: "Layout", name: "layout", widget: "hidden", default: update}
      - {label: "Short Description", name: "shortdescription", widget: "string"}
      - {label: "Content", name: "content", widget: "markdown"}

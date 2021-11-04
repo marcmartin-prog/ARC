@@ -209,6 +209,16 @@ section {
   max-width: 11rem;
 }
 
+.card-parent{
+  padding: 2rem 0;
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 .details a{
   text-align: center;
   display: block;
@@ -283,6 +293,17 @@ section {
 .hero img{
   object-fit: contain;
   height: 100%;
+}
+
+.list{
+  background-color: var(--tertiary);
+  padding: 2rem 0.94rem;
+}
+.list h2, .list h3, .list p{
+  color: white;
+}
+.list p{
+  opacity: 0.6;
 }
 
 .logo img{
@@ -475,6 +496,16 @@ footer .logo img{
   margin: 1.5rem auto;
 }
 
+.update-content{
+  background-color: var(--tertiary);
+  padding: 2rem 0.94rem;
+
+}
+.update-content p{
+  color: white;
+  opacity: 0.6;
+}
+
 .vision{
   background-color: var(--tertiary);
   padding: 1rem 0.94rem 3rem;
@@ -588,6 +619,9 @@ a, p {
 
   .footer-div, .footer-menu{
     flex-direction: row;
+  }
+  .footer-div div{
+    min-width: 25%;
   }
   .footer-menu a{
     margin: 2rem 1rem;
