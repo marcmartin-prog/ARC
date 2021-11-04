@@ -32,5 +32,6 @@ collections:
     fields:
      - {label: "Title", name: "title", widget: "string"}
      - {label: "Layout", name: "layout", widget: "hidden", default: update}
+     - {label: "Date", name: "date", widget: "datetime", default: ""}
      - {label: "Short Description", name: "shortdescription", widget: "string"}
      - {label: "Content", name: "content", widget: "markdown"}

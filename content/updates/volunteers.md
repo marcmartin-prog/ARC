@@ -1,6 +1,7 @@
 ---
-title: "Volunteers "
+title: "Volunteers"
 layout: update
+date: 2021-11-05T06:21:35-05:00
 shortdescription: Volunteers Needed to work with the refugees in Fort McCoy
 content: We have an immediate need for more volunteers to help with the refugees
   in Fort McCoy. We can use men or ladies, single or married (must be 18 or
