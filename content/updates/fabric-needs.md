@@ -1,6 +1,6 @@
 ---
 layout: update
-date: 2021-11-04T06:21:35-05:00
+date: 2021-11-03T06:21:35-05:00
 title: Fabric Needs
 shortdescription: Fabric needed for the Fort McCoy project
 content: We are looking for fabric to help out with the sewing projects at Fort

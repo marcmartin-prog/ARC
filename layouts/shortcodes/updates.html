@@ -1,8 +1,8 @@
-<section class="list">
+<section class="list" id="updates">
   <h2>Updates from ARC Ministry</h2>
   <p>Here is some of our latest updates and most pressing needs.</p>
   <div class="card-parent">
-    {{ range (where .Site.RegularPages "Type" "updates").Reverse }}
+    {{ range (where .Site.RegularPages "Type" "updates").ByDate.Reverse }}
        <div class="card">
          <h3>{{.Title}}</h3>
          <p>{{ .Params.shortdescription }}</p>

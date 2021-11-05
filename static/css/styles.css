@@ -217,6 +217,7 @@ section {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 1rem;
   border-radius: 8px;
+  margin: 1rem 0;
 }
 
 .details a{
@@ -296,14 +297,18 @@ section {
 }
 
 .list{
-  background-color: var(--tertiary);
+  background-color: var(--quaternary);
   padding: 2rem 0.94rem;
 }
 .list h2, .list h3, .list p{
-  color: white;
+  color: var(--secondary);
+  letter-spacing: 1px;
 }
 .list p{
   opacity: 0.6;
+}
+.list a{
+  letter-spacing: 1.5px;
 }
 
 .logo img{
@@ -557,6 +562,10 @@ a, p {
   .buttons{
     max-width: 21rem;
   }
+  .card{
+    max-width: 35rem;
+    margin: 1rem auto;
+  }
 
   .downloads a{
     width: 15rem;
@@ -583,6 +592,14 @@ a, p {
 
 .logo img{
   height: 7.5rem;
+}
+
+.list p, .list h2, .list h3{
+  text-align: center;
+}
+.list a{
+  text-align: center;
+  display: block;
 }
 
 .points{
@@ -711,6 +728,15 @@ a, p {
     max-width: 22rem;
   }
 
+  .card{
+    width: 100%;
+  }
+
+  .card-parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .downloads div{
     width: 75%;
   }
@@ -772,6 +798,10 @@ a, p {
 
   .aqua-text{
     font-size: 1.75rem;
+  }
+
+  .card-parent{
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .downloads a{
