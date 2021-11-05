@@ -56,8 +56,8 @@
 
 @font-face {
     font-family: 'plus-Jakarta-Sans';
-    src: url('/fonts/Butler.woff2') format('woff2'),
-        url('/fonts/Butler.woff') format('woff');
+    src: url('/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -201,7 +201,7 @@ section {
 
 .buttons{
   margin: 5rem auto;
-  max-width: 19rem;
+  max-width: 20rem;
 }
 
 .button{
@@ -501,6 +501,11 @@ footer .logo img{
   margin: 1.5rem auto;
 }
 
+.success{
+  height: 95vh;
+  padding: 4rem 0.94rem;
+}
+
 .update-content{
   background-color: var(--tertiary);
   padding: 2rem 0.94rem;
@@ -509,6 +514,11 @@ footer .logo img{
 .update-content p{
   color: white;
   opacity: 0.6;
+}
+
+#update-hero{
+  height: 70vh;
+  background-color: var(--tertiary);
 }
 
 .vision{
@@ -675,7 +685,7 @@ a, p {
   }
 
   .menu li{
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
     font-size: 1.875rem;
   }
 
@@ -688,7 +698,13 @@ a, p {
     font-weight: bold;
   }
 
-
+  #update-hero{
+    margin-bottom: -9.9rem;
+  }
+  #update-text{
+    left: 0;
+    right: 0;
+  }
 
   .vision p{
     max-width: 37rem;
@@ -763,6 +779,10 @@ a, p {
     font-size: 2.5rem;
   }
 
+  .menu li{
+    margin: 1rem 2rem;
+  }
+
   .opportunities img{
     max-width: 20%;
   }
@@ -772,6 +792,10 @@ a, p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 3.5rem;
+  }
+
+  #update-hero{
+    margin-bottom: -12.9rem;
   }
 
   .who-we-are{
@@ -829,5 +853,9 @@ a, p {
 
   .hero-text{
     top: 5rem;
+  }
+
+  .menu li{
+    margin: 1rem 3rem;
   }
 }
