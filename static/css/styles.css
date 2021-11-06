@@ -176,6 +176,11 @@ section {
   padding: 2rem 0.94rem;
 }
 
+.application--div{
+  max-width: 50rem;
+  margin: auto;
+}
+
 .application p, .application h2{
   color: white;
 }
@@ -596,9 +601,7 @@ a, p {
   max-width: 25rem;
 }
 
-.info{
-  margin-top: -8.9rem;
-}
+
 
 .logo img{
   height: 7.5rem;
