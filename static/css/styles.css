@@ -294,6 +294,7 @@ section {
   height: 95vh;
   opacity: 0.5;
   margin-bottom: -6.9rem;
+  min-height: 36rem;
 }
 
 .hero img{
@@ -509,6 +510,11 @@ footer .logo img{
 .success{
   height: 95vh;
   padding: 4rem 0.94rem;
+}
+
+.success div{
+  max-width: 50rem;
+  margin: auto;
 }
 
 .update-content{
