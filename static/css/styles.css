@@ -529,7 +529,18 @@ footer .logo img{
 
 #update-hero{
   height: 70vh;
-  background-color: var(--tertiary);
+  background-image: url(/images/projects.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}#update-hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.65);
 }
 
 .vision{
