@@ -750,10 +750,10 @@ a, p {
     font-size: 4rem;
   }
   h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h3{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   a, p{
@@ -784,6 +784,10 @@ a, p {
 
   .hero{
     top: -12.9rem;
+  }
+
+  .hero-text h1{
+    font-size: 3rem;
   }
 
   .info>div{
@@ -824,9 +828,24 @@ a, p {
   }
 }
 
+@media only screen and (min-width: 1360px){
+  .hero-text h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+}
+
 @media only screen and (min-width: 1920px){
 
   h1{
+    font-size: 5rem;
+  }
+  .hero-text h1{
     font-size: 5rem;
   }
   h2{
