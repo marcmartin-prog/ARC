@@ -1,6 +1,6 @@
 ---
-layout: opportunity
 title: Afghanistan Refugees
+layout: opportunity
 shortdescription: Refugees from Afghanistan have been pouring into the USA since
   the Taliban have overrun the country.
 thumbnailwebp: /images/uploads/refugees.webp
@@ -17,7 +17,7 @@ situation3: There are a few activities for the people at the base. There is a
   receive clearance from the army to be given a two hour slot to sew. Because of
   demand, there is only about one turn available per month. Men and boys have
   little to nothing to do.
-opportunities1: There is activity centers for the women and children. The
+opportunities1: There are activity centers for the women and children. The
   children can do some activities and schooling, and the women have a quiet
   place where they can go to visit. They are asking many questions about living
   and relating in America. They have notebooks to write things down and want to
