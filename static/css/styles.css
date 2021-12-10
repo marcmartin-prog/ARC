@@ -489,6 +489,12 @@ footer .logo img{
   max-width: 20rem;
 }
 
+.signup{
+  max-width: 20rem;
+  max-height: 10rem;
+  margin: auto;
+}
+
 .situation{
   background-color: var(--secondary);
   padding: 3rem 0.94rem;
