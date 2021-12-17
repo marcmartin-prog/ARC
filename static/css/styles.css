@@ -12,6 +12,7 @@
         url('/fonts/PlusJakartaSans-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         url('/fonts/PlusJakartaSans-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +30,7 @@
         url('/fonts/PlusJakartaSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +39,7 @@
         url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +48,7 @@
         url('/fonts/PlusJakartaSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +57,7 @@
         url('/fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -60,6 +66,7 @@
         url('/fonts/PlusJakartaSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 a{
