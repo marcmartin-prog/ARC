@@ -12,8 +12,8 @@ situation1: There have been thousands of refugees recently brought over from
 situation2: These people are being placed in cities around the USA. Our goal is
   to reach out to them to assist them in any way needed.
 situation3: The sudden change of culture and country is more than most of us can
-  imagine. They need help learning English, getting driver's license, and
-  assimilating to our culture.
+  imagine. They need help learning English, getting driver's license,
+  assimilating to our culture, etc.
 opportunities1: .
 opportunities2: .
 opportunities3: .
