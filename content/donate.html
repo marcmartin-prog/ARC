@@ -5,7 +5,7 @@ draft: false
 description: "Share with ARC Ministry, to help us help refugees and show them the glory of God"
 ---
 
-<section>
+<section class="donate">
   <div class="">
     <div class="hero">
       <picture class="">
@@ -15,91 +15,91 @@ description: "Share with ARC Ministry, to help us help refugees and show them th
       </picture>
     </div>
     <div class="hero-text">
-        <h1>Donate</h1>
-        <p>If you want to help, you can send donations to the address below. Online donations are coming soon. God bless you for sharing!</p>
+      <h1>Donate</h1>
+      <p>If you want to help, you can support our work below. God bless you for sharing!</p>
     </div>
   </div>
 </section>
 <section class="info">
-    <h2>Send Donations Here:</h2>
+  <h2>Support Our Work:</h2>
+  <div class="">
     <div class="">
-      <div class="">
+      <div>
         <div>
-  <div><div style="
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 259px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  font-family: SQ Market, Helvetica, Arial, sans-serif;
-  ">
-  <div style="padding: 20px;">
-  <a target="_blank" data-url="https://square.link/u/qoBHQuv5?src=embd" href="https://square.link/u/qoBHQuv5?src=embed" style="
+          <div style="
+             overflow: auto;
+             margin: auto;
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-end;
+             align-items: center;
+            width: 259px;
+            box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+             border-radius: 10px;
+             font-family: SQ Market, Helvetica, Arial, sans-serif;
+            ">
+            <div style="padding: 20px; margin: 0;">
+              <a target="_blank" data-url="https://square.link/u/qoBHQuv5?src=embd" href="https://square.link/u/qoBHQuv5?src=embed" style="
     display: inline-block;
     font-size: 18px;
     line-height: 48px;
     height: 48px;
     color: #ffffff;
     min-width: 212px;
-    background-color: #000000;
+    background-color: #2adbc8;
     text-align: center;
     box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+    border-radius: 8px;
+  ">Donate Online</a>
+            </div>
+          </div>
+        </div>
 
-  ">Donate</a>
-  </div>
-</div>
-</div>
+        <script>
+          function showCheckoutWindow(e) {
+            e.preventDefault();
 
-  <script>
-    function showCheckoutWindow(e) {
-      e.preventDefault();
+            const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
+            const title = 'Square Online Checkout';
 
-      const url = document.getElementById('embedded-checkout-modal-checkout-button').getAttribute('data-url');
-      const title = 'Square Online Checkout';
+            // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
+            const topWindow = window.top ? window.top : window;
 
-      // Some platforms embed in an iframe, so we want to top window to calculate sizes correctly
-      const topWindow = window.top ? window.top : window;
+            // Fixes dual-screen position                                Most browsers          Firefox
+            const dualScreenLeft = topWindow.screenLeft !== undefined ? topWindow.screenLeft : topWindow.screenX;
+            const dualScreenTop = topWindow.screenTop !== undefined ? topWindow.screenTop : topWindow.screenY;
 
-      // Fixes dual-screen position                                Most browsers          Firefox
-      const dualScreenLeft = topWindow.screenLeft !==  undefined ? topWindow.screenLeft : topWindow.screenX;
-      const dualScreenTop = topWindow.screenTop !==  undefined   ? topWindow.screenTop  : topWindow.screenY;
+            const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
 
-      const width = topWindow.innerWidth ? topWindow.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-      const height = topWindow.innerHeight ? topWindow.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+            const h = height * .75;
+            const w = 500;
 
-      const h = height * .75;
-      const w = 500;
+            const systemZoom = width / topWindow.screen.availWidth;
+            const left = (width - w) / 2 / systemZoom + dualScreenLeft;
+            const top = (height - h) / 2 / systemZoom + dualScreenTop;
+            const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
 
-      const systemZoom = width / topWindow.screen.availWidth;
-      const left = (width - w) / 2 / systemZoom + dualScreenLeft;
-      const top = (height - h) / 2 / systemZoom + dualScreenTop;
-      const newWindow = window.open(url, title, `scrollbars=yes, width=${w / systemZoom}, height=${h / systemZoom}, top=${top}, left=${left}`);
+            if (window.focus) newWindow.focus();
+          }
 
-      if (window.focus) newWindow.focus();
-    }
-
-    // This overrides the default checkout button click handler to show the embed modal
-    // instead of opening a new tab with the given link url
-    document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function (e) {
-      showCheckoutWindow(e);
-    });
-  </script>
-</div>
-      </div>
-      <div class="">
-        <p>Checks made out to ARC Ministry.</p>
-        <p>Mailing Address:</p>
-        <p>ARC Ministry <br>PO Box 139<br>Strawberry AR 72469</p>
-        <br>
-        <p>If you have questions, contact Kevin Weaver</p>
-        <a href="mailto:kevin@arcministry.org">kevin@arcministry.org</a>
-        <br>
-        <a href="tel:8705306308">870-530-6308</a>
+          // This overrides the default checkout button click handler to show the embed modal
+          // instead of opening a new tab with the given link url
+          document.getElementById('embedded-checkout-modal-checkout-button').addEventListener('click', function(e) {
+            showCheckoutWindow(e);
+          });
+        </script>
       </div>
     </div>
+    <div class="">
+      <p>Checks made out to ARC Ministry.</p>
+      <p>Mailing Address:</p>
+      <p>ARC Ministry <br>PO Box 139<br>Strawberry AR 72469</p>
+      <br>
+      <p>If you have questions, contact Kevin Weaver</p>
+      <a href="mailto:kevin@arcministry.org">kevin@arcministry.org</a>
+      <br>
+      <a href="tel:8705306308">870-530-6308</a>
+    </div>
+  </div>
 </section>
