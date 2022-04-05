@@ -50,7 +50,7 @@ draft: false
   <h2>Downloads</h2>
   <div class="">
     <a href="/documents/Guidelines.pdf">Guidelines</a>
-    <a href="/documents/Volunteer-Application.pdf">Application Form</a>
+    <a href="/documents/Guidelines&ApplicationMinneapolis.pdf">Application Form</a>
     <a href="/documents/ARC-abuse.pdf">ARC Abuse Document</a>
   </div>
 </section>
@@ -59,7 +59,6 @@ draft: false
     <h2>Submit Your Application Online</h2>
     <form name='Application' class="" action="thanks.html" method="post" data-netlify="true" data-secure>
       <label for="Name">Full Name</label>
-      <p>Please include full legal name, not just the middle initial.</p>
       <input type="text" name="Name" value="" required>
       <label for="address">Address</label>
       <input type="text" name="address" value="" required>
@@ -88,6 +87,11 @@ draft: false
         <option value="male">Male</option>
         <option value="female">Female</option>
       </select>
+      <label for="tesol">Do you have TESOL certification?</label>
+      <select class="" name="tesol">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
       <label for="married">Married?</label>
       <select class="married" name="married" required>
         <option value="Yes">Yes</option>
@@ -98,20 +102,30 @@ draft: false
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
-      <label for="group">Are you signing up as a group?</label>
-      <select class="group" name="group" required>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-      <label for="what-group">If so, what group?</label>
-      <input type="text" name="what-group" value="">
-      <label for="Follower-of-Jesus">Are you a follower of Jesus?</label>
+      <label for="parents">Parents</label>
+      <input type="text" name="parents" value="">
+
+      <label for="Follower-of-Jesus">Are you a born again follower of Jesus?</label>
       <select class="" name="Follower-of-Jesus" required>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
       </select>
+      <label for="Testimony">Give a brief testimony of your relationship with God</label>
+      <textarea name="Testimony" rows="2" cols="80"></textarea>
       <label for="church">What church do you currently attend?</label>
       <input type="text" name="church" value="" required>
+      <label for="supportive-member">Are you a faithful member and supportive of your home congregation?</label>
+      <select class="" name="supportive-member">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <label for="Electronics-meet-requirements?">Do your electronics meet the above requirements?</label>
+      <select class="" name="Electronics-meet-requirements?">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <label for="filter">Give a brief description of the filter/block you are using, and/or your accountability with your device.</label>
+      <textarea name="filter" rows="1" cols="80"></textarea>
       <p>Pastor's Contact:</p>
       <label for="pastors-name">Pastor's Name</label>
       <input type="text" name="pastors-name" value="" required>
@@ -134,15 +148,16 @@ draft: false
       <textarea name="details" rows="1" cols="80"></textarea>
       <label for="commitment">How long of a term are you able to commit to?</label>
       <select class="" name="commitment" required>
-        <option value="2 Weeks">2 Weeks</option>
-        <option value="1 Month">1 Month</option>
         <option value="2 Months">2 Months</option>
+        <option value="6 Months">6 Months</option>
+        <option value="1 Year">1 Year</option>
       </select>
-      <label for="preferred-date">Preferred date of service</label>
-      <input type="text" name="preferred-date" value="" required>
+      <p>We are asking a minimum of 2 months for general volunteers and 6 months for house parents.</p>
+      <label for="available-date">Date you are available to begin serving</label>
+      <input type="text" name="available-date" value="" required>
       <label for="Message">Any Notes</label>
       <textarea name="Message" rows="1" cols="80"></textarea>
-      <p>By submitting this application, you agree to uphold the code of conduct and dress requirements.</p>
+      <p>It is important that you read and understand the content of this form. By submitting, you agree to willingly support the guidelines and requirements being asked by ARC Ministry. Disregarding it in any way may result in your time with ARC Ministry being terminated. If in doubt, please ask, don't assume.</p>
       <input type="submit" name="submit" value="SUBMIT">
     </form>
 
@@ -154,12 +169,12 @@ draft: false
       <h2>General Information or Lodging</h2>
       <p class="name">Anthony Martin</p>
       <a href="tel:7152900376">715-290-0376</a> <br>
-      <a href="mailto:antmartin@emypeople.net">antmartin@emypeople.net</a>
+      <a href="mailto:anthony@arcministry.org">anthony@arcminstry.org</a>
       <p>Shiloh Mennonite Church, Conrath WI</p>
       <br>
       <p class="name">Kevin Weaver</p>
       <a href="tel:8705306308">870-530-6308</a> <br>
-      <a href="mailto:kev.1weaver@icloud.com">kev.1weaver@icloud.com</a>
+      <a href="mailto:kevin@arcministry.org">kevin@arcministry.org</a>
       <p>Strawberry Mennonite Church, Strawberry AR</p>
     </div>
     <div class="">
