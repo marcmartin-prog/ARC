@@ -528,6 +528,11 @@ footer .logo img{
   margin: 1.5rem auto;
 }
 
+#sponsor{
+  min-height: unset;
+  height: 40rem;
+}
+
 .success{
   height: 95vh;
   padding: 4rem 0.94rem;
